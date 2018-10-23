@@ -4,7 +4,7 @@
 
 # Site
 title: Defy
-subtitle:
+subtitle: 凝视深渊过久，深渊将回以凝视
 description:
 keywords:
 author: Defy
@@ -82,8 +82,35 @@ deploy:
     repository: https://github.com/defypro/defypro.github.io.git
     branch: master
 
+
 favicon:
   small: /images/favicon-16x16-next.png
   medium: /images/favicon-32x32-next.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
+
+menu:
+  home: / || home
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  #about: /about/ || user
+  #archives: /archives/ || archive
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
+
+menu_settings:
+  icons: true
+  badges: true
+
+# Social links
+social:
+  GitHub: https://github.com/defypro || github
+
+plugins: hexo-generate-feed
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
