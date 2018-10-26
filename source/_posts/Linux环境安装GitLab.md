@@ -30,6 +30,7 @@ GitLab下载地址:https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el6
 ### 修改gitlab配置文件指定服务器ip和自定义端口
 
 ```bash
+    vim /etc/gitlab/gitlab.rb
     #禁用gitlab附带的nginx
     nginx['enable'] = false
     gitlab_workhorse['enable'] = true
@@ -98,6 +99,12 @@ GitLab下载地址:https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el6
 ```bash
     #重载配置
     sudo gitlab-ctl reconfigure
+    #启动
+    gitlab-ctl start
+    #停止
+    gitlab-ctl stop
+    #重启
+    gitlab-ctl restart
 ```
 
 打开浏览器访问gitlab.xxx.com
