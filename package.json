@@ -18,6 +18,10 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.1"
+    "hexo-server": "^0.3.1",
+    "node-prismjs": "^0.1.2",
+    "node-sass": "^4.10.0",
+    "node-sass-magic-importer": "^5.2.0",
+    "prismjs": "^1.15.0"
   }
 }
