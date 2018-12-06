@@ -1,5 +1,5 @@
 ---
-title: Object.defineProperty实现双向数据绑定
+title: Object.defineProperty 简单实现数据双向绑定
 date: 2018-12-06 14:06:53
 categories:
   - JavaScript
