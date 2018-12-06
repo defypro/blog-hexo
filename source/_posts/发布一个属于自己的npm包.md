@@ -22,7 +22,7 @@ date: 2018-10-26 11:11:11
 
 ##### 修改项目结构
 > 在根目录创建文件夹src，并且新建index.js
-```javascript
+``` javascript
     var hello = {
         say: function () {
             console.log('hello');
