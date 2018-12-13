@@ -1,12 +1,13 @@
 ---
 title: JS将日期转换Date对象时的问题
 tags:
+  - 前端
   - JavaScript
 url: 132.html
 id: 132
 comments: false
 categories:
-  - 前端
+  - JavaScript
 translate_title: problems-with-js-converting-date-objects
 date: 2018-09-17 17:12:56
 ---
