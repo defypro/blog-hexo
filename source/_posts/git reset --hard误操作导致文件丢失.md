@@ -7,6 +7,7 @@ id: 136
 comments: false
 categories:
   - 奇淫技巧
+translate_title: git-reset----file-loss-due-to-hard-misoperation
 date: 2018-09-18 10:18:30
 ---
 
@@ -20,4 +21,3 @@ date: 2018-09-18 10:18:30
 ### 相关文章
 
 [关于git reset --hard导致文件丢失的血的教训](https://blog.csdn.net/lijiafa/article/details/78275936 "关于git reset --hard导致文件丢失的血的教训")
-<!-- more -->

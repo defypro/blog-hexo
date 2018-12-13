@@ -7,6 +7,7 @@ id: 57
 comments: false
 categories:
   - 前端
+translate_title: css-variables-(custom-properties)
 date: 2018-09-03 14:37:33
 ---
 

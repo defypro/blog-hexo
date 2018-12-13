@@ -1,10 +1,11 @@
 ---
 title: Object.defineProperty 简单实现数据双向绑定
-date: 2018-12-06 14:06:53
 categories:
   - JavaScript
-tags: 
-    - JavaScript 
+tags:
+  - JavaScript
+translate_title: object.-defneproperty-simply-implements-bidirectional-binding-of-data
+date: 2018-12-06 14:06:53
 ---
 
 > Object.defineProperty() 方法会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性， 并返回这个对象。

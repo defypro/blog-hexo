@@ -5,6 +5,7 @@ tags:
   - ES6
 categories:
   - 前端
+translate_title: js-singleton-(es6)
 date: 2018-12-12 15:57:33
 ---
 

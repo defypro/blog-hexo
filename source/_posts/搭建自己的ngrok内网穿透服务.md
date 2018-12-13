@@ -1,11 +1,12 @@
 ---
 title: 搭建自己的ngrok内网穿透服务
-date: 2018-11-02 17:06:53
 categories:
   - Linux
-tags: 
-    - Ngrok 
-    - Linux
+tags:
+  - Ngrok
+  - Linux
+translate_title: build-your-own-ngrok-intranet-penetration-service
+date: 2018-11-02 17:06:53
 ---
 
 ### 为什么需要内网穿透

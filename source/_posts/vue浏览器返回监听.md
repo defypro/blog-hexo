@@ -7,6 +7,7 @@ id: 128
 comments: false
 categories:
   - 前端
+translate_title: vue-browser-returns-to-monitor
 date: 2018-09-11 11:39:21
 ---
 

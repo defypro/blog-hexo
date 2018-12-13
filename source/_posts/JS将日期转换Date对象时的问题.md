@@ -7,11 +7,12 @@ id: 132
 comments: false
 categories:
   - 前端
+translate_title: problems-with-js-converting-date-objects
 date: 2018-09-17 17:12:56
 ---
 
 二话不说上代码 在ES5之中，如果日期采用连词线（-）格式分隔，且具有前导0，JavaScript会认为这是一个ISO格式的日期字符串，导致返回的时间是以UTC时区计算的
-<!-- more -->
+
 ``` javascript
     new Date('2014-01-01')
     // Wed Jan 01 2014 08:00:00 GMT+0800 (CST)

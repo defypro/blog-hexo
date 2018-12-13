@@ -9,6 +9,7 @@ id: 36
 comments: false
 categories:
   - Linux
+translate_title: resource-files-cannot-be-accessed-through-nginx-in-centos6
 date: 2018-08-31 15:07:40
 ---
 

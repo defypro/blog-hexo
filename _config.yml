@@ -5,8 +5,8 @@
 # Site
 title: Defy
 subtitle: 莫道君行早，更有早行人
-description:
-keywords:
+description: Defy的博客
+keywords: PHP,Nginx,MySQL,JavaScript,Html5,CSS3,Jquery,NodeJs,Vue
 author: Defy
 language: zh-CN
 timezone:
@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://defypro.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:translate_title/
 permalink_defaults:
 
 # Directory
@@ -114,3 +114,24 @@ search:
   field: post
   format: html
   limit: 10000
+
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
+translate_title:
+  translate_way: baidu_no_appid  # google,youdao,baidu_with_appid,baidu_no_appid
+  is_need_proxy: false     # true | false
+  # proxy_url: http://localhost:50018 # Your proxy_url
+  # youdao_api_key: '' # Your youdao_api_key
+  # youdao_keyfrom: xxxx-blog # Your youdao_keyfrom
+  # baidu_appid: '' # Your baidu_appid
+  # baidu_appkey: '' # Your baidu_appkey

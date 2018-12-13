@@ -8,6 +8,7 @@ id: 139
 comments: false
 categories:
   - 前端
+translate_title: cross-domain-proxy-in-vue
 date: 2018-10-15 09:58:57
 ---
 

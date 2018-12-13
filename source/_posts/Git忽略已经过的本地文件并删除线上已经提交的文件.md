@@ -4,7 +4,8 @@ tags:
   - GIT
 categories:
   - 奇淫技巧
-date: 2018-10-26 11:43
+date: '2018-10-26 11:43'
+translate_title: git-ignores-local-files-that-have-passed-and-deletes-files-submitted-online
 ---
 
 在根目录添加`.gitignore`忽略文件，并且设置要忽略的文件或者目录，当要忽略的文件以及提交时

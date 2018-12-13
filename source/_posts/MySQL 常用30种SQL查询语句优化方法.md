@@ -7,6 +7,7 @@ id: 74
 comments: false
 categories:
   - 数据库
+translate_title: mysql-query-statement-optimization-method-for-30-commonly-used-sql-queries
 date: 2018-09-03 14:56:18
 ---
 

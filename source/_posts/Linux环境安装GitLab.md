@@ -7,9 +7,10 @@ id: 124
 comments: false
 categories:
   - Linux
+translate_title: installation-of-gitlab-in-linux-environment
 date: 2018-09-05 16:16:14
 ---
-<!-- more -->
+
 ### 安装依赖
 ```bash
     #配置系统防火墙,把HTTP和SSH端口开放.
