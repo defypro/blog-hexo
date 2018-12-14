@@ -1,7 +1,7 @@
 ---
 title: 搭建自己的ngrok内网穿透服务
 categories:
-  - Linux
+  - Ngrok
 tags:
   - Ngrok
   - Linux

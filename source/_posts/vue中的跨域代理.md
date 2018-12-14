@@ -2,12 +2,10 @@
 title: vue中的跨域代理
 tags:
   - JavaScript
-  - Vue
-url: 139.html
-id: 139
+  - 前端
 comments: false
 categories:
-  - 前端
+  - Vue
 translate_title: cross-domain-proxy-in-vue
 date: 2018-10-15 09:58:57
 ---

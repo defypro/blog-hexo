@@ -1,10 +1,10 @@
 ---
 title: 发布一个属于自己的npm包
 tags:
-  - npm
-  - javascript
+  - NPM
+  - JavaScript
 categories:
-  - 前端
+  - NPM
 translate_title: publish-your-own-npm-package
 date: 2018-10-26 11:11:11
 ---

@@ -2,6 +2,7 @@
 title: MySQL 常用30种SQL查询语句优化方法
 tags:
   - MySQL
+  - 数据库
 url: 74.html
 id: 74
 comments: false

@@ -6,6 +6,8 @@ tags:
     - PHP
     - Nginx
     - PHP-FPM
+categories:
+  - PHP
 ---
 
 <!-- #### 代理与反向代理

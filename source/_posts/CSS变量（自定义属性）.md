@@ -2,6 +2,7 @@
 title: CSS变量（自定义属性）
 tags:
   - CSS
+  - 前端
 url: 57.html
 id: 57
 comments: false
