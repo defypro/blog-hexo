@@ -2,10 +2,7 @@
 title: vue浏览器返回监听
 tags:
   - JavaScript
-  - 前端
-url: 128.html
-id: 128
-comments: false
+  - Vue
 categories:
   - Vue
 translate_title: vue-browser-returns-to-monitor

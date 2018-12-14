@@ -1,10 +1,9 @@
 ---
 title: Git忽略已经过的本地文件并删除线上已经提交的文件
 tags:
-  - GIT
-  - 奇淫技巧
+  - Git
 categories:
-  - 奇淫技巧
+  - Git
 date: '2018-10-26 11:43'
 translate_title: git-ignores-local-files-that-have-passed-and-deletes-files-submitted-online
 ---

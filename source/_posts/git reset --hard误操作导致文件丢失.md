@@ -1,10 +1,9 @@
 ---
 title: git reset --hard误操作导致文件丢失
 tags:
-  - GIT
-  - 奇淫技巧
+  - Git
 categories:
-  - GIT
+  - Git
 translate_title: git-reset----file-loss-due-to-hard-misoperation
 date: 2018-09-18 10:18:30
 ---

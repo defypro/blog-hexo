@@ -3,9 +3,6 @@ title: Linux环境安装GitLab
 tags:
   - GitLab
   - Linux
-url: 124.html
-id: 124
-comments: false
 categories:
   - Git
 translate_title: installation-of-gitlab-in-linux-environment

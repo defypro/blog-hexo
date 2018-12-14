@@ -2,12 +2,9 @@
 title: CSS变量（自定义属性）
 tags:
   - CSS
-  - 前端
-url: 57.html
-id: 57
 comments: false
 categories:
-  - 前端
+  - CSS
 translate_title: css-variables-(custom-properties)
 date: 2018-09-03 14:37:33
 ---

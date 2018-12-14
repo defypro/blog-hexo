@@ -3,9 +3,9 @@ title: Nginx+Php-fpm运行原理详解
 translate_title: detailed-operating-principle-of-nginx+php-fpm
 date: 2018-12-13 13:56:57
 tags:
-    - PHP
-    - Nginx
-    - PHP-FPM
+  - PHP
+  - Nginx
+  - PHP-FPM
 categories:
   - PHP
 ---

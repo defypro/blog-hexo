@@ -2,7 +2,7 @@
 title: vue中的跨域代理
 tags:
   - JavaScript
-  - 前端
+  - Vue
 comments: false
 categories:
   - Vue

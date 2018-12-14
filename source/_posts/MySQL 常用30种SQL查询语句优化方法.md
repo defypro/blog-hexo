@@ -2,12 +2,8 @@
 title: MySQL 常用30种SQL查询语句优化方法
 tags:
   - MySQL
-  - 数据库
-url: 74.html
-id: 74
-comments: false
 categories:
-  - 数据库
+  - MySQL
 translate_title: mysql-query-statement-optimization-method-for-30-commonly-used-sql-queries
 date: 2018-09-03 14:56:18
 ---

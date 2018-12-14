@@ -3,7 +3,6 @@ title: Centos6中无法通过Nginx访问资源文件
 tags:
   - Linux
   - Nginx
-  - SELINUX
 url: 36.html
 id: 36
 comments: false
