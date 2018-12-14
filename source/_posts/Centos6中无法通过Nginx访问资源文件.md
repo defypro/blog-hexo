@@ -3,9 +3,6 @@ title: Centos6中无法通过Nginx访问资源文件
 tags:
   - Linux
   - Nginx
-url: 36.html
-id: 36
-comments: false
 categories:
   - Linux
 translate_title: resource-files-cannot-be-accessed-through-nginx-in-centos6
