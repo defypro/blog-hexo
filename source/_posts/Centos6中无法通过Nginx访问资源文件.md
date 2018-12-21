@@ -6,7 +6,7 @@ tags:
 categories:
   - Linux
 translate_title: resource-files-cannot-be-accessed-through-nginx-in-centos6
-date: 2018-08-31 15:07:40
+date: 2018-08-31 15:07:45
 ---
 
 在谷歌云搞了个免费的服务器，搭建了一个wordpress结果css、js一直报404，一开始以为是nginx的启动用户和文件用户不一样，
