@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>2019个税计算</title>
 </head>
 <body style="padding: 0;margin: 0;">
@@ -37,89 +37,88 @@
     var app = new Vue({
         el: '#app',
         data: {
-            chartSettings:{},
-            extend:{
+            chartSettings: {},
+            extend: {
                 series: {
-                    label: { show: true, position: "top" }
+                    label: {show: true, position: "top"}
                 }
             },
-            txtIncome:'',
-            chartData:{
-                columns: ['月份', '当月应缴税款','当月应缴税款(旧)','累计应缴税款','本月税后收入','本月税后收入(旧)'],
+            txtIncome: '',
+            chartData: {
+                columns: ['月份', '当月应缴税款', '当月应缴税款(旧)', '累计应缴税款', '本月税后收入', '本月税后收入(旧)'],
                 rows: []
             }
         },
-        computed:{
-            lblTaxableIncome(){
-                if(this.txtIncome <= 0 ) return 0;
+        computed: {
+            lblTaxableIncome() {
+                if (this.txtIncome <= 0) return 0;
                 return this.txtIncome - 5000;
             }
         },
-        watch:{
-            lblTaxableIncome(){
+        watch: {
+            lblTaxableIncome() {
                 this.setChartDataRows();
             }
         },
-        methods:{
-            setChartDataRows(){
-                if(this.txtIncome <= 0 ) return [];
+        methods: {
+            setChartDataRows() {
+                if (this.txtIncome <= 0) return [];
                 this.chartData.rows = [];
                 for (var i = 1; i <= 12; i++) {
                     let txtTaxAlready = 0;
-                    if(i > 1){
-                        txtTaxAlready = this.chartData.rows[this.chartData.rows.length - 1]['累计应缴税款']
-                    }
+                    if (i > 1)
+                        txtTaxAlready = this.chartData.rows[this.chartData.rows.length - 1]['累计应缴税款'];
                     const sameMonthTax = Math.floor((this.getTxtTax(this.lblTaxableIncome * i) - txtTaxAlready) * 100) / 100;
                     this.chartData.rows.push({
-                        '月份':i+'月',
-                        '当月应缴税款':sameMonthTax,
-                        '累计应缴税款':Math.floor((txtTaxAlready+sameMonthTax) * 100) / 100,
-                        '本月税后收入':Math.floor((this.txtIncome - sameMonthTax) * 100) / 100,
-                        '当月应缴税款(旧)':Math.floor((this.getTxtTaxOld(this.lblTaxableIncome)) * 100) / 100,
-                        '本月税后收入(旧)':Math.floor((this.txtIncome - this.getTxtTaxOld(this.lblTaxableIncome)) * 100) / 100,
+                        '月份': i + '月',
+                        '当月应缴税款': sameMonthTax,
+                        '累计应缴税款': this.getTxtTax(this.lblTaxableIncome * i),
+                        '本月税后收入': Math.floor((this.txtIncome - sameMonthTax) * 100) / 100,
+                        '当月应缴税款(旧)': Math.floor((this.getTxtTaxOld(this.lblTaxableIncome)) * 100) / 100,
+                        '本月税后收入(旧)': Math.floor((this.txtIncome - this.getTxtTaxOld(this.lblTaxableIncome)) * 100) / 100,
                     })
                 }
             },
-            getTxtTax(lblTaxableIncome){
+            getTxtTax(lblTaxableIncome) {
                 let txtTax;
-                if(lblTaxableIncome <= 36000){
+                if (lblTaxableIncome <= 36000) {
                     txtTax = lblTaxableIncome * (3 / 100);
-                }else if (lblTaxableIncome <= 144000){
+                } else if (lblTaxableIncome <= 144000) {
                     txtTax = lblTaxableIncome * (10 / 100) - 2520;
-                }else if (lblTaxableIncome <= 300000){
+                } else if (lblTaxableIncome <= 300000) {
                     txtTax = lblTaxableIncome * (20 / 100) - 16920;
-                }else if (lblTaxableIncome <= 420000){
+                } else if (lblTaxableIncome <= 420000) {
                     txtTax = lblTaxableIncome * (25 / 100) - 31920;
-                }else if (lblTaxableIncome <= 660000){
+                } else if (lblTaxableIncome <= 660000) {
                     txtTax = lblTaxableIncome * (30 / 100) - 52920;
-                }else if (lblTaxableIncome <= 960000){
+                } else if (lblTaxableIncome <= 960000) {
                     txtTax = lblTaxableIncome * (35 / 100) - 85920;
-                }else if (lblTaxableIncome > 960000){
+                } else if (lblTaxableIncome > 960000) {
                     txtTax = lblTaxableIncome * (45 / 100) - 181920;
                 }
                 return Math.floor(txtTax * 100) / 100
             },
-            getTxtTaxOld(lblTaxableIncome){
+            getTxtTaxOld(lblTaxableIncome) {
                 let txtTax;
-                if(lblTaxableIncome <= 3000){
+                if (lblTaxableIncome <= 3000) {
                     txtTax = lblTaxableIncome * (3 / 100);
-                }else if (lblTaxableIncome <= 12000){
+                } else if (lblTaxableIncome <= 12000) {
                     txtTax = lblTaxableIncome * (10 / 100) - 210;
-                }else if (lblTaxableIncome <= 25000){
+                } else if (lblTaxableIncome <= 25000) {
                     txtTax = lblTaxableIncome * (20 / 100) - 1410;
-                }else if (lblTaxableIncome <= 35000){
+                } else if (lblTaxableIncome <= 35000) {
                     txtTax = lblTaxableIncome * (25 / 100) - 2660;
-                }else if (lblTaxableIncome <= 55000){
+                } else if (lblTaxableIncome <= 55000) {
                     txtTax = lblTaxableIncome * (30 / 100) - 4410;
-                }else if (lblTaxableIncome <= 80000){
+                } else if (lblTaxableIncome <= 80000) {
                     txtTax = lblTaxableIncome * (35 / 100) - 7160;
-                }else if (lblTaxableIncome > 80000){
+                } else if (lblTaxableIncome > 80000) {
                     txtTax = lblTaxableIncome * (45 / 100) - 15160;
                 }
                 return Math.floor(txtTax * 100) / 100;
             },
         },
-        created (){
+        created() {
         }
     })
 </script>
