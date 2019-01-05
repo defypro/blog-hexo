@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+---
+layout: false
+---
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8"/>
@@ -15,18 +17,18 @@
         <tr>
             <th>月份</th>
             <th>当月应缴税款</th>
-            <th>当月应缴税款(旧)</th>
+            <th>当月应缴税款(按月)</th>
             <th>累计应缴税款</th>
             <th>本月税后收入</th>
-            <th>本月税后收入(旧)</th>
+            <th>本月税后收入(按月)</th>
         </tr>
         <tr v-for="item in chartData.rows">
             <td>{{item['月份']}}</td>
             <td>{{item['当月应缴税款']}}</td>
-            <td>{{item['当月应缴税款(旧)']}}</td>
+            <td>{{item['当月应缴税款(按月)']}}</td>
             <td>{{item['累计应缴税款']}}</td>
             <td>{{item['本月税后收入']}}</td>
-            <td>{{item['本月税后收入(旧)']}}</td>
+            <td>{{item['本月税后收入(按月)']}}</td>
         </tr>
     </table>
 </div>
@@ -45,7 +47,7 @@
             },
             txtIncome: '',
             chartData: {
-                columns: ['月份', '当月应缴税款', '当月应缴税款(旧)', '累计应缴税款', '本月税后收入', '本月税后收入(旧)'],
+                columns: ['月份', '当月应缴税款', '当月应缴税款(按月)', '累计应缴税款', '本月税后收入', '本月税后收入(按月)'],
                 rows: []
             }
         },
@@ -74,8 +76,8 @@
                         '当月应缴税款': sameMonthTax,
                         '累计应缴税款': this.getTxtTax(this.lblTaxableIncome * i),
                         '本月税后收入': Math.floor((this.txtIncome - sameMonthTax) * 100) / 100,
-                        '当月应缴税款(旧)': Math.floor((this.getTxtTaxOld(this.lblTaxableIncome)) * 100) / 100,
-                        '本月税后收入(旧)': Math.floor((this.txtIncome - this.getTxtTaxOld(this.lblTaxableIncome)) * 100) / 100,
+                        '当月应缴税款(按月)': Math.floor((this.getTxtTaxOld(this.lblTaxableIncome)) * 100) / 100,
+                        '本月税后收入(按月)': Math.floor((this.txtIncome - this.getTxtTaxOld(this.lblTaxableIncome)) * 100) / 100,
                     })
                 }
             },

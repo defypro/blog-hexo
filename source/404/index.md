@@ -1,0 +1,18 @@
+---
+layout: false
+title: '404'
+translate_title: four-hundred-and-four
+---
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>公益404</title>
+</head>
+<body>
+<h1>404 Page Not Found</h1>
+<br>
+<script type="text/javascript" src="http://www.qq.com/404/search_children.js"     charset="utf-8">
+</script>
+<br>
+</body>
+</html>
