@@ -23,12 +23,12 @@ layout: false
             <th>本月税后收入(按月)</th>
         </tr>
         <tr v-for="item in chartData.rows">
-            <td>{{item['月份']}}</td>
-            <td>{{item['当月应缴税款']}}</td>
-            <td>{{item['当月应缴税款(按月)']}}</td>
-            <td>{{item['累计应缴税款']}}</td>
-            <td>{{item['本月税后收入']}}</td>
-            <td>{{item['本月税后收入(按月)']}}</td>
+            <td v-html="item['月份']"></td>
+            <td v-html="item['当月应缴税款']"></td>
+            <td v-html="item['当月应缴税款(按月)']"></td>
+            <td v-html="item['累计应缴税款']"></td>
+            <td v-html="item['本月税后收入']"></td>
+            <td v-html="item['本月税后收入(按月)']"></td>
         </tr>
     </table>
 </div>
