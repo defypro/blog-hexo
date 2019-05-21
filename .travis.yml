@@ -1,0 +1,30 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+
+#before_script:
+ # - npm install -g gulp
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "defypro"
+  - git config user.email "284465256@qq.com"
+  - git add .
+  - git commit -m "update blog"
+  - git push --force --quiet "https://d7b2df373d1c203749847bf15f786ab642533016@${GH_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
+env:
+ global:
+   - GH_REF: github.com/defypro/defypro.github.io
