@@ -2,10 +2,16 @@ language : node_js
 node_js:
  - "10"
 
-# S: Build Lifecycle
+cache:
+    apt: true
+    directories:
+        - node_modules
+
+before_install:
+    - npm install hexo-cli -g
+
 install:
   - npm install
-
 
 script:
   - hexo clean
@@ -18,8 +24,7 @@ after_script:
   - git config user.email "284465256@qq.com"
   - git add .
   - git commit -m "update blog"
-  - git push --force --quiet "https://d7b2df373d1c203749847bf15f786ab642533016@${GH_REF}" master:master
-# E: Build LifeCycle
+  - git push --force --quiet "https://${TOKEN}@${GH_REF}" master:master
 
 branches:
   only:
