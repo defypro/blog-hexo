@@ -1,6 +1,6 @@
 language : node_js
 node_js:
- - "10"
+ - "8"
 
 before_install:
   - npm install -g hexo-cli
@@ -9,8 +9,7 @@ install:
   - npm install
 
 script:
-  - hexo clean
-  - hexo generate
+  - hexo g
 
 after_script:
   - cd ./public
