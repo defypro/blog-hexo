@@ -3,7 +3,7 @@ title: 浅析Vue响应式原理
 tags:
   - Vue
 translate_title: analysis-of-vue-response-principle
-date: 2019-05-15 16:36:52
+date: 2019-05-20 16:36:52
 ---
 
 Vue的双向绑定基本原理是Obeject.defineProperty()劫持对象属性来实现修改数据改变视图，修改视图改变数据。那么具体是如何在数据和视图建立起关联的呢？
