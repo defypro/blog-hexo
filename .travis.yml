@@ -1,6 +1,10 @@
 language: node_js
 node_js: stable
 
+cache:
+  directories:
+    - node_modules
+    
 install:
   - npm install
 
@@ -22,4 +26,4 @@ branches:
     - master
 env:
  global:
-   - GH_REF: github.com/defypro/defypro.github.io
+   - GH_REF: github.com/defypro/defypro.github.io.git
